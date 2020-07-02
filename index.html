@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is today raid day?</title>
+    <style>
+        .answer-container {
+            text-align: center;
+            font-size: 40px;
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="answer-container">
+        <div id="answer"></div>
+    </div>
+</body>
+
+<script>
+    var answerDiv = document.querySelector('#answer');
+    var today = new Date(2020, 6, 2).getDay();
+    var isRaidDay = today === 4 || today == 0;
+    var answer = isRaidDay ? 'Yes': 'No';
+    answerDiv.innerHTML = answer;
+</script>
+
+</html>
