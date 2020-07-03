@@ -20,7 +20,7 @@
 
 <script>
     var answerDiv = document.querySelector('#answer');
-    var today = new Date(2020, 6, 2).getDay();
+    var today = new Date().getDay();
     var isRaidDay = today === 4 || today == 0;
     var answer = isRaidDay ? 'Yes': 'No';
     answerDiv.innerHTML = answer;
